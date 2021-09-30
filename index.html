@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Quizz</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Quizz culture générale</h2>
+        <form action="" class="form">
+            <div class="blocs">
+                <h3 class="question">HTML est un langage de :</h3>
+                <div>
+                    <input type="radio" id="html" name="q1" value="a" checked>
+                    <label for="html">style</label>
+                </div>
+                <div>
+                    <input type="radio" id="balisage" name="q1" value="b">
+                    <label for="balisage">balisage</label>
+                </div>
+                <div>
+                    <input type="radio" id="poo" name="q1" value="c">
+                    <label for="poo">poo</label>
+                </div>
+            </div>
+            <div class="blocs">
+                <h3 class="question">javascript est un langage coté:</h3>
+                <div>
+                    <input type="radio" id="serveur" name="q2" value="a" checked>
+                    <label for="serveur">serveur</label>
+                </div>
+                <div>
+                    <input type="radio" id="client" name="q2" value="b">
+                    <label for="client">client</label>
+                </div>
+                <div>
+                    <input type="radio" id="bdd" name="q2" value="c">
+                    <label for="bdd">base de données</label>
+                </div>
+            </div>
+            <div class="blocs">
+                <h3 class="question">quel est l'outil de style en dev?</h3>
+                <div>
+                    <input type="radio" id="html" name="q3" value="a" checked>
+                    <label for="html">css</label>
+                </div>
+                <div>
+                    <input type="radio" id="html" name="q3" value="b">
+                    <label for="html">html</label>
+                </div>
+                <div>
+                    <input type="radio" id="js" name="q3" value="c">
+                    <label for="js">js</label>
+                </div>
+            </div>
+            <div class="blocs">
+                <h3 class="question">Git est un outil de :</h3>
+                <div>
+                    <input type="radio" id="gv" name="q4" value="a" checked>
+                    <label for="html">programmation</label>
+                </div>
+                <div>
+                    <input type="radio" id="html" name="q4" value="b">
+                    <label for="gv">gestion de version </label>
+                </div>
+                <div>
+                    <input type="radio" id="mef" name="q4" value="c">
+                    <label for="mef">mise en forme</label>
+                </div>
+            </div>
+            <div class="blocs">
+                <h3 class="question">Symfony est un framework de : </h3>
+                <div>
+                    <input type="radio" id="php" name="q5" value="a" checked>
+                    <label for="php">php</label>
+                </div>
+                <div>
+                    <input type="radio" id="java" name="q5" value="b">
+                    <label for="java">java</label>
+                </div>
+                <div>
+                    <input type="radio" id="javascript" name="q5" value="c">
+                    <label for="javascript">javascript</label>
+                </div>
+            </div>
+    +
+                <button type="submit">Validez vos réponses</button>
+        </form>
+        <div class="resultat">
+            <p class="note">votre note est:<span class="toto"></span></p>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>   
+</html>
