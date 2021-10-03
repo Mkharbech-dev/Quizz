@@ -1,7 +1,7 @@
 .container{
     width: 40%;
     margin: auto;
-    background-color: black;
+    background-color: rgb(27, 26, 26);
     border: 2px solid black;
     border-radius: 3px;
 }
@@ -12,7 +12,7 @@
     border: 1px solid white;
     margin-bottom: 4px;
     padding:4px 40px;
-    background: black
+    background: rgb(27, 26, 26);
 }
 h3{
     text-align: center;
@@ -45,5 +45,32 @@ form button{
     font-size: 18px;
     text-align: center;
     color: white;
-   
+
+}
+.rouge{
+    background-color: rgb(192, 19, 19);
+}
+.vert{
+    background-color: rgb(68, 192, 19);
+}
+.noir{
+    background-color: rgb(27, 26, 26);
+}
+.echec {
+    animation: echec 0.3s ease-in-out;
+}
+
+@keyframes echec {
+    0% {
+        transform: translateX(0px);
+    }
+    33% {
+        transform: translateX(5px);
+    }
+    66% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
