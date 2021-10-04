@@ -5,6 +5,7 @@ const reponses_true = ["b","b","a","b","a"];
  const titreResultat = document.querySelector('.titre');
  const aideResultat = document.querySelector('.aide');
  const bloc = document.querySelectorAll('.blocs')
+ const input = document.querySelector('input')
 //  console.log(bloc)
  
 // console.log(form)
@@ -26,9 +27,11 @@ function verif(a,b){
         if (a[i] === b[i]) {
             verifTab.push(true);
             bloc[i].style.background='lightgreen';
+            bloc[i].style.color='#000000';
         }else{
             verifTab.push(false);
             bloc[i].style.background='#ffb8b8';
+            bloc[i].style.color='#000000';
 
             bloc[i].classList.add("echec");
             setTimeout(() => {
@@ -42,6 +45,7 @@ function verif(a,b){
     bloc.forEach(item => {
         item.addEventListener('click', () => {
             item.style.background = "black";
+            item.style.color = "white"
         })
     })
 }
@@ -58,27 +62,27 @@ function nbrFautes (para){
             case 0:
                 document.querySelector('.toto').innerText=" 0/5";
                 titreResultat.innerText = `👎 pas de chance  ! 👎`;
-                aideResultat.innerText = `👎 tentez les reponses rouges  ! 👎`;
+                aideResultat.innerText = `👎 Retentez les reponses en zones rouges  ! 👎`;
                 break;
             case 1:
                 document.querySelector('.toto').innerText=" 1/5";
                 titreResultat.innerText = `👎 Peux mieux faire ! 👎`;
-                aideResultat.innerText = `👎 tentez les reponses rouges  ! 👎`;
+                aideResultat.innerText = `👎 Retentez les reponses en zones rouges  ! 👎`;
                 break;
             case 2:
                 document.querySelector('.toto').innerText=" 2/5";
                 titreResultat.innerText = `👀 Il reste quelques erreurs. 😭`;
-                aideResultat.innerText = `👎 tentez les reponses rouges  ! 👎`
+                aideResultat.innerText = `👎 Retentez les reponses en zones rouges  ! 👎`
                 break;
             case 3:
                 document.querySelector('.toto').innerText=" 3/5";
                 titreResultat.innerText = `✨ Encore un effort ... 👀`;
-                aideResultat.innerText = `👎 tentez les reponses rouges  ! 👎`;
+                aideResultat.innerText = `👎 Retentez les reponses en zones rouges  ! 👎`;
                 break;
             case 4:
                 document.querySelector('.toto').innerText=" 4/5";
                 titreResultat.innerText = `✨ Vous y êtes presque ! ✨`;
-                aideResultat.innerText = `👎 tentez les reponses rouges  ! 👎`;
+                aideResultat.innerText = `👎 Retentez les reponses en zones rouges  ! 👎`;
                 break;
             case 5:
                 document.querySelector('.toto').innerText=" 5/5";
