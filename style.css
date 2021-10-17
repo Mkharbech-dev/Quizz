@@ -1,5 +1,5 @@
 .container{
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: auto;
     background-color: rgb(27, 26, 26);
@@ -7,7 +7,7 @@
     border-radius: 3px;
 }
 .blocs{
-    width: 60%;
+    width: 70%;
     margin: auto;
     border-radius: 5px;
     border: 1px solid white;
